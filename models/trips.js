@@ -1,3 +1,4 @@
+
 const {UUVIDV4, Model, DataTypes}= require('sequelize');
 const sequelize = require ('../config/connection.js');
 const bcrypt = require('bcrypt');
@@ -45,3 +46,8 @@ Trips.init(
 );
 
 module.exports = Trips;
+
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
+
+
