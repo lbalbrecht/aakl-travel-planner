@@ -1,9 +1,11 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
 
-class trips extends Model { }
+const {UUVIDV4, Model, DataTypes}= require('sequelize');
+const sequelize = require ('../config/connection.js');
+const bcrypt = require('bcrypt');
 
-trips.init(
+class Trips extends Model {};
+
+Trips.init(
     {
         id:{
             type: DataTypes.INTEGER,
@@ -42,5 +44,9 @@ trips.init(
         modelName: 'trips',
     }
 );
-module.exports = trips;
+
+module.exports = Trips;
+
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 
