@@ -1,0 +1,26 @@
+{
+  "name": "aakl-travel-planner",
+  "version": "1.0.0",
+  "description": "An application that generates random trips, providing information on budget, destination, and travelers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbalbrecht/aakl-travel-planner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lbalbrecht/aakl-travel-planner/issues"
+  },
+  "homepage": "https://github.com/lbalbrecht/aakl-travel-planner#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "sequelize": "^6.6.2"
+  }
+}
