@@ -1,8 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-Traveller.init({
+class travelers extends Model {}
+
+travelers.init(
+    {
     id: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -26,8 +28,8 @@ Traveller.init({
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'traveller',
+        modelName: 'travelers',
     }
 );
 
-module.exports = Traveller;
+module.exports = travelers;
